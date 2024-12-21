@@ -24,16 +24,25 @@ print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 
 firstQ = input("You found a temple and must go through its passages to uncover the hidden treasure! \n"
-                "You must first chose if you want yo go left of right. Type 'L' or 'R \nll").lower()
-
-if firstQ == "R":
-    secondQ= input('"You must now choose to swim between 2 different rivers! Pick "L" or "R".\n'
+                "You must first chose if you want yo go left of right. Type 'left' or 'right' \n").lower()
+if firstQ == "left":
+    secondQ = input('"You must now choose to swim between 2 different rivers! Pick "L" or "R".\n'
             'Hurry, the path behind you is collapsing"\n').lower()
-    if secondQ == "R":
-        thirdQ= input('You\'ve come to a to a dark enterance. There is a lever you can pull to'
+    if secondQ == "right":
+        thirdQ = input('You\'ve come to a to a dark enterance. There is a lever you can pull to '
                       'possibly get some light or you can continue in the dark.'
                       'Type "continue" to go in the dark or "pull"...\n').lower()
         if thirdQ == "pull":
+            fourthQ = input('You now have come to choose 3 doors, a green, red and a blue one.'
+                            ' Which door do you choose "Green", "Red" or "Blue"? \n').lower()
+            if fourthQ == "green": 
+                print("🪙You found the treasure!!!🪙")
+            elif fourthQ == "red":
+                print("🕷️You choose a room full of black widows and died🕷️")
+            elif fourthQ == "blue":
+                print("🐺You got eaten by Wolves.🐺")
+            else: 
+                print("🐺You got eaten by Wolves.🐺")
         else:
             print("🦂You ran into a pit half way through and fell into a bed of scorpions🦂")
     else:
