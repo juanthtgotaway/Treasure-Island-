@@ -28,7 +28,10 @@ firstQ = input("You found a temple and must go through its passages to uncover t
 
 if firstQ == "R":
     secondQ= input('"You must now choose to swim between 2 different rivers! Pick "L" or "R".\n'
-            'Hurry, the path is collapsing"\n').lower()
+            'Hurry, the path behind you is collapsing"\n').lower()
+    if secondQ == "R":
+    else:
+        print("🦈You got ate by sharks🦈")
 else:
     print("🐍You have fallen into a pit of snakes🐍")
 
