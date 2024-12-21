@@ -22,3 +22,13 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
+
+firstQ = input("You found a temple and must go through its passages to uncover the hidden treasure! \n"
+                "You must first chose if you want yo go left of right. Type 'L' or 'R \nll").lower()
+
+if firstQ == "R":
+    secondQ= input('"You must now choose to swim between 2 different rivers! Pick "L" or "R".\n'
+            'Hurry, the path is collapsing"\n').lower()
+else:
+    print("🐍You have fallen into a pit of snakes🐍")
+
