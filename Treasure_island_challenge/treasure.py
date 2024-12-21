@@ -26,7 +26,7 @@ print("Your mission is to find the treasure.")
 firstQ = input("You found a temple and must go through its passages to uncover the hidden treasure! \n"
                 "You must first chose if you want yo go left of right. Type 'left' or 'right' \n").lower()
 if firstQ == "left":
-    secondQ = input('"You must now choose to swim between 2 different rivers! Pick "L" or "R".\n'
+    secondQ = input('"You must now choose to swim between 2 different rivers! Pick "left" or "right".\n'
             'Hurry, the path behind you is collapsing"\n').lower()
     if secondQ == "right":
         thirdQ = input('You\'ve come to a to a dark enterance. There is a lever you can pull to '
