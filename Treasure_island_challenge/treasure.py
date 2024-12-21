@@ -30,6 +30,12 @@ if firstQ == "R":
     secondQ= input('"You must now choose to swim between 2 different rivers! Pick "L" or "R".\n'
             'Hurry, the path behind you is collapsing"\n').lower()
     if secondQ == "R":
+        thirdQ= input('You\'ve come to a to a dark enterance. There is a lever you can pull to'
+                      'possibly get some light or you can continue in the dark.'
+                      'Type "continue" to go in the dark or "pull"...\n').lower()
+        if thirdQ == "pull":
+        else:
+            print("🦂You ran into a pit half way through and fell into a bed of scorpions🦂")
     else:
         print("🦈You got ate by sharks🦈")
 else:
